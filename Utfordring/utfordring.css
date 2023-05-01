@@ -1,0 +1,112 @@
+.cardbody{
+    background-color:#ffffff;
+    z-index:-1;
+  }
+  .cardbody .box{
+    margin: 0 0 30px;
+    
+    display: block;
+    overflow: hidden;
+    position: inline-block;
+    box-shadow: 0 2px 5px rgba(0,0,0, .2);
+    border-radius: 10px;
+    min-height: 400px;
+    width: 260px;
+
+
+  }
+
+  div.row {
+    padding-left: 1%!important;
+    padding-right: 1%!important;
+  }
+
+  p.card-description {
+    margin: 15px 15px 15px!important;
+  }
+
+ 
+  
+  .cardbody .box:hover{
+    box-shadow:0px 5px 10px rgba(0,0,0,.15);
+     transform: translateY(-10px);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .cardbody .box:active{
+    box-shadow:0px 5px 20px rgba(0,0,0,.15);
+     transform: translateY(-20px);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .cardbody .box:focus{
+    box-shadow:0px 5px 10px rgba(0,0,0,.15);
+  }
+  .cardbody .card-body{
+    min-height:215px;
+  }
+  .cardbody .box .card-body .card-icon {
+      font-size: 40px;
+    color :#fff;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      padding: 30px 0 10px;
+  }
+  .cardbody .box .card-body .card-title {
+    margin: 5px 0 0 0;
+    color: #FFF!important;
+    font-size: 1.6em;
+      line-height: 1.2em;
+        line-height: 1.5em;
+  }
+  .cardbody .box .card-body .card-description {
+      color: #FFFF;
+      margin-bottom: 5px;
+      margin-top: 15px;
+  }
+  .card-green {
+      background: #6EBE98;
+  }
+  .card-blue {
+      background: #519BB2;
+  }
+  .card-purple {
+      background: #BE84C0;
+  }
+  .card-brown {
+      background: #D0A583;
+  }
+  .btn-round {
+      border-radius: 30px;
+  }
+  .cardbody .btn-neutral {
+      margin-top:10px;
+      margin-bottom:10px;
+      background-color: #fff;
+      border-color: #fff;
+      color: #fff;
+      opacity: 1;
+      filter: alpha(opacity=100);
+      color: #66615b;
+      box-sizing: border-box;
+      border-width: 2px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: .5rem 28px;
+      line-height: 2;
+      cursor: pointer;
+      text-transform: uppercase;
+      -webkit-transition: all .15s linear;
+      transition: all .15s linear;
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 1px solid transparent;
+  }
