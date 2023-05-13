@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratulerer!</title>
+    
+    <link href="/style.css" rel="stylesheet">
+    <link href="gratulerer.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f13b4e5a7e.js" crossorigin="anonymous"></script>
+    
+    
+</head>
+<body>
+     <!--    Original hamburger menu made by Erik Terwan    -->
+     <nav role="navigation">
+        <div id="menuToggle">
+
+        <input type="checkbox" />
+        
+        <span></span>
+        <span></span>
+        <span></span>
+        
+
+        <ul id="menu">
+            <a href="/index.html"><li>Hjem</li></a>
+            <a href="/dashboard/dash.html"><li>Dashboard</li></a>
+            <a href="/wireframes/sparing.html"><li>Strøm utregning</li></a>
+            <a href="#"><li>Skjerm størrelser</li></a>
+            <a href="Utfordring/utfordring.html"><li>Utfordringer</li></a>
+        </ul>
+        </div>
+    </nav>
+
+    <h1 class="main">Gratulerer!</h1>
+
+    <div class="wrapper">
+        <div class="modal">
+          <span class="emoji">👏</span>
+          <h1 class="stor">Godt gjort Tina! 
+          </h1>
+          <p class="liten">Du har fullført din første utfordring!  <br></p>
+          <a href="#" class="modal-btn">Vis meg hvor mye jeg har spart</a>
+        </div>
+        <div id="confetti-wrapper">
+      </div>
+
+      <script>
+        for(i=0; i<200; i++) {
+  // Random rotation
+  var randomRotation = Math.floor(Math.random() * 360);
+  // Random width & height between 0 and viewport
+  var randomWidth = Math.floor(Math.random() * Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+  var randomHeight =  Math.floor(Math.random() * Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+  
+  // Random animation-delay
+  var randomAnimationDelay = Math.floor(Math.random() * 10);
+  console.log(randomAnimationDelay)
+
+  // Random colors
+  var colors = ['#0CD977', '#FF1C1C', '#FF93DE', '#5767ED', '#FFC61C', '#8497B0']
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  // Create confetti piece
+  var confetti = document.createElement('div');
+  confetti.className = 'confetti';
+  confetti.style.top=randomHeight + 'px';
+  confetti.style.left=randomWidth + 'px';
+  confetti.style.backgroundColor=randomColor;
+  confetti.style.transform='skew(15deg) rotate(' + randomRotation + 'deg)';
+  confetti.style.animationDelay=randomAnimationDelay + 's';
+  document.getElementById("confetti-wrapper").appendChild(confetti);
+}
+      </script>
+</body>
+</html>
