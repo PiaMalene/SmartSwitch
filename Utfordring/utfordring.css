@@ -25,7 +25,12 @@
     margin: 15px 15px 15px!important;
   }
 
- 
+ .denied {
+  position: absolute;
+  top: 100%;
+  left: 42%;
+  border: 1px solid #ceb0b0;
+ }
   
   .cardbody .box:hover{
     box-shadow:0px 5px 10px rgba(0,0,0,.15);
